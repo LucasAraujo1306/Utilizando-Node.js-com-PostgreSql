@@ -2,6 +2,7 @@ const db = require('./_database');
 
 async function createTable() {
     await db.connect()
+
     await db.query(`create table evento (
     id serial primary key, 
     nome varchar(50) unique not null
@@ -19,6 +20,7 @@ async function createTable() {
     )`)
 
     await db.end()
+
     console.log('Tabela criada')
 }
 

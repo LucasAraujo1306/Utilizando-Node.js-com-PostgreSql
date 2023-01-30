@@ -22,7 +22,9 @@ async function insertData() {
     await db.query(queryEventoParticipante, [2, 4])
 
     await db.end()
+
     console.log('Insormações inserida')
 }
+
 
 insertData()

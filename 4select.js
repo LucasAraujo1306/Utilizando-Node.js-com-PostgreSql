@@ -2,6 +2,7 @@ const db = require('./_database');
 
 async function listData() {
     await db.connect()
+
     let resultEvento
     resultEvento = await db.query(`select * from evento`);
     console.log('Evento')
